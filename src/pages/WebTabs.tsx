@@ -88,52 +88,57 @@ const WebTabs: React.FC<RouteComponentProps> = () => {
           component={FormTagihan}
         />
       </IonRouterOutlet>
-      <div className="bg-white border-gray-400 border p-2 rounded-md flex gap-2 absolute top-3 left-5">
-        <IonButton
-          routerLink="/tabs/siswa"
-          routerDirection="none"
-          fill="clear"
-          color={isSame('/tabs/siswa') ? 'tertiary' : 'dark'}
-        >
-          <IonIcon icon={people} />
-          <IonLabel className="ml-2">Siswa</IonLabel>
-        </IonButton>
-        <IonButton
-          routerLink="/tabs/admin"
-          routerDirection="none"
-          fill="clear"
-          color={isSame('/tabs/admin') ? 'tertiary' : 'dark'}
-        >
-          <IonIcon icon={person} />
-          <IonLabel className="ml-2">Admin</IonLabel>
-        </IonButton>
-        <IonButton
-          routerLink="/tabs/profile"
-          routerDirection="none"
-          fill="clear"
-          color={isSame('/tabs/profile') ? 'tertiary' : 'dark'}
-        >
-          <IonIcon icon={personCircleOutline} />
-          <IonLabel className="ml-2">Profile</IonLabel>
-        </IonButton>
-        <IonButton
-          routerLink={`/tabs/add-siswa/false`}
-          routerDirection="none"
-          fill="clear"
-          color={isSame('/tabs/add-siswa') ? 'tertiary' : 'dark'}
-        >
-          <IonIcon icon={people} />
-          <IonLabel className="ml-2">Tambah Siswa</IonLabel>
-        </IonButton>
-        <IonButton
-          routerLink={`/tabs/add-admin/false`}
-          routerDirection="none"
-          fill="clear"
-          color={isSame('/tabs/add-admin') ? 'tertiary' : 'dark'}
-        >
-          <IonIcon icon={person} />
-          <IonLabel className="ml-2">Tambah Admin</IonLabel>
-        </IonButton>
+      <div className="w-full flex justify-between items-center absolute top-3 h-16 pl-5 pr-10">
+        <div className="bg-white border-gray-400 border p-2 rounded-md flex gap-2">
+          <IonButton
+            routerLink="/tabs/siswa"
+            routerDirection="none"
+            fill="clear"
+            color={isSame("/tabs/siswa") ? "tertiary" : "dark"}
+          >
+            <IonIcon icon={people} />
+            <IonLabel className="ml-2">Siswa</IonLabel>
+          </IonButton>
+          <IonButton
+            routerLink="/tabs/admin"
+            routerDirection="none"
+            fill="clear"
+            color={isSame("/tabs/admin") ? "tertiary" : "dark"}
+          >
+            <IonIcon icon={person} />
+            <IonLabel className="ml-2">Admin</IonLabel>
+          </IonButton>
+          <IonButton
+            routerLink="/tabs/profile"
+            routerDirection="none"
+            fill="clear"
+            color={isSame("/tabs/profile") ? "tertiary" : "dark"}
+          >
+            <IonIcon icon={personCircleOutline} />
+            <IonLabel className="ml-2">Profile</IonLabel>
+          </IonButton>
+          <IonButton
+            routerLink={`/tabs/add-siswa/false`}
+            routerDirection="none"
+            fill="clear"
+            color={isSame("/tabs/add-siswa") ? "tertiary" : "dark"}
+          >
+            <IonIcon icon={people} />
+            <IonLabel className="ml-2">Tambah Siswa</IonLabel>
+          </IonButton>
+          <IonButton
+            routerLink={`/tabs/add-admin/false`}
+            routerDirection="none"
+            fill="clear"
+            color={isSame("/tabs/add-admin") ? "tertiary" : "dark"}
+          >
+            <IonIcon icon={person} />
+            <IonLabel className="ml-2">Tambah Admin</IonLabel>
+          </IonButton>
+        </div>
+        <div className="w-14 h-14 border border-gray-400 rounded-lg overflow-hidden flex justify-center items-center p-2">
+          <img src="/logo.png" alt="" />
+        </div>
       </div>
     </>
   );
