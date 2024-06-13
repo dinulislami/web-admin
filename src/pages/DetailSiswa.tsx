@@ -84,8 +84,8 @@ const DetailSiswa: React.FC<DetailSiswaType> = ({ match }) => {
     if (!ref.current) return;
 
     dispatch(fetchTagihan(match.params.id));
-    const el = ref.current;
-    el.value = "second";
+    const el = ref.current as any;
+    el.value = ["first", "second"];
   }, []);
 
   const tagihanView = loadingTagihan ? (

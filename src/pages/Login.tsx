@@ -61,7 +61,6 @@ const Login: React.FC<RouteComponentProps> = () => {
         onDidDismiss={() => setalertisopen(false)}
       />
       <div className="w-screen h-screen flex justify-center items-center relative oveeflow-hidden">
-        <GradientBackground />
         <div className="flex px-8 py-6 justify-start items-center flex-col gap-10 z-10">
           <div className="flex justify-start items-start flex-col gap-4">
             <span className="text-4xl font-extrabold">Hello Admin !!</span>

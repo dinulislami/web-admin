@@ -213,8 +213,8 @@ const DetailTagihan: React.FC<DetailTagihanType> = ({ match }) => {
     if (!ref.current) return;
 
     dispatch(fetchPembayaran(match?.params?.id || "0"));
-    const el = ref.current;
-    el.value = "second";
+    const el = ref.current as any;
+    el.value = ["first", "second"];
   }, []);
 
   const pembayaranView = loadingPembayaran ? (

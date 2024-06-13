@@ -66,7 +66,6 @@ const App: React.FC = () => {
       <IonPage>
         <IonContent>
           <div className="w-full h-screen flex justify-center items-center relative overflow-hidden">
-            <GradientBackground />
             <IonSpinner name="dots" />
           </div>
         </IonContent>
