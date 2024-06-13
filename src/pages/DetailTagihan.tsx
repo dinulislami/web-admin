@@ -308,13 +308,13 @@ const DetailTagihan: React.FC<DetailTagihanType> = ({ match }) => {
                     >
                       Edit
                     </IonButton>
-                    <IonButton
+                    {/* <IonButton
                       fill="clear"
                       className="w-4/5"
                       onClick={() => createAndDownloadPDF()}
                     >
                       Download Pdf
-                    </IonButton>
+                    </IonButton> */}
                     <IonButton
                       onClick={() => deleteTagihan()}
                       fill="clear"

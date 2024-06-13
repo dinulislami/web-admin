@@ -63,7 +63,7 @@ const Login: React.FC<RouteComponentProps> = () => {
       <div className="w-screen h-screen flex justify-center items-center relative oveeflow-hidden">
         <div className="flex px-8 py-6 justify-start items-center flex-col gap-10 z-10">
           <div className="flex justify-start items-start flex-col gap-4">
-            <span className="text-4xl font-extrabold">Hello Admin !!</span>
+            <span className="text-4xl font-extrabold">Login Admin</span>
             <span className="text-xs font-light pr-8">
               Masukkan username dan password untuk masuk ke aplikasi pembayaran
               spp

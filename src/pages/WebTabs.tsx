@@ -88,8 +88,8 @@ const WebTabs: React.FC<RouteComponentProps> = () => {
           component={FormTagihan}
         />
       </IonRouterOutlet>
-      <div className="w-full flex justify-between items-center absolute top-3 h-16 pl-5 pr-10">
-        <div className="bg-white border-gray-400 border p-2 rounded-md flex gap-2">
+      <div className="w-full flex justify-between items-center absolute top-3 h-16 pl-5 pr-10 ">
+        <div className="bg-white border-gray-400 border p-2 rounded-md flex gap-2 dark:text-gray-500 dark:bg-slate-900">
           <IonButton
             routerLink="/tabs/siswa"
             routerDirection="none"
